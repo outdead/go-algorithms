@@ -7,8 +7,8 @@ import (
 
 func main() {
 	var initial = []int{1, 2, 5, 5, 12, 13, 13, 17, 21, 21, 24, 25, 25, 44, 45, 47, 56, 66, 75, 84, 85, 92, 97, 99, 99}
-	var needle = 44
-	var want = 13
+	var needle = 25
+	var want = 11 // 12 if unstable
 
 	fmt.Printf("Initial array .......... %v\n", initial)
 	fmt.Printf("Needle value ........... %v\n", needle)
@@ -18,10 +18,10 @@ func main() {
 	fmt.Printf("LineSearch ............. %v\n", LineSearch(initial, needle))
 	fmt.Printf("LinePredicateSearch .... %v\n", LinePredicateSearch(initial, needle))
 	fmt.Printf("BinarySearch ........... %v\n", BinarySearch(initial, needle))
-	fmt.Printf("BinaryRecursionSearch .. %v\n", BinaryRecursionSearch(initial, needle, 0, len(initial) + 1))
+	fmt.Printf("BinaryRecursionSearch .. %v\n", BinaryRecursionSearch(initial, needle, 0, len(initial)))
 	fmt.Printf("InterpolationSearch .... %v\n", InterpolationSearch(initial, needle))
 
-	hashMap := make(map[int]int, 25)
+	hashMap := make(map[int]int, len(initial))
 	for key, value := range initial {
 		hashMap[value] = key
 	}
@@ -41,7 +41,7 @@ func LineSearch(array []int, needle int) int {
 	return -1
 	////array[len(array)+1] = needle
 	//var i int
-	//for i = 0; array[i] != needle; i ++ {}
+	//for i = 0; array[i] != needle; i++ {}
 	//return i
 }
 
@@ -61,25 +61,25 @@ func linePredicateSearch(limit int, predicate func(i int) bool) int {
 }
 
 func BinarySearch(array []int, needle int) int {
-	first := 0
-	last := len(array)
+	left := 0
+	right := len(array)
 
-	if last == 0 || needle < array[0] || needle > array[last - 1] {
+	if right == 0 || needle < array[0] || needle > array[right - 1] {
 		return -1
 	}
 
-	for first < last {
-		mid := first + (last - first) / 2
+	for left < right {
+		mid := left + (right - left) / 2
 
 		if needle <= array[mid] {
-			last = mid
+			right = mid
 		} else {
-			first = mid + 1
+			left = mid + 1
 		}
 	}
 
-	if array[last] == needle {
-		return last
+	if array[right] == needle {
+		return right
 	} else {
 		return -1
 	}
@@ -93,42 +93,42 @@ func BinaryRecursionSearch(array []int, needle int, left int, right int) int {
 		return -1
 	}
 
-	mid := (left + right) / 2
+	mid := left + (right - left) / 2
+
 	if array[mid] == needle {
 		return mid
-	}
-	if array[mid] < needle {
-		return BinaryRecursionSearch(array, needle, left, mid + 1)
+	} else if array[mid] > needle {
+		return BinaryRecursionSearch(array, needle, left, mid)
 	} else {
-		return BinaryRecursionSearch(array, needle, mid + 1, right)
+		return BinaryRecursionSearch(array, needle, mid, right)
 	}
 }
 
 func InterpolationSearch(array []int, needle int) int {
-	first := 0
-	last := len(array) -1
+	left := 0
+	right := len(array) - 1
 	mid := 0
 
-	if last == 0 || needle < array[0] || needle > array[last] {
+	if right == 0 || needle < array[0] || needle > array[right] {
 		return -1
 	}
 
-	for array[first] < needle && array[last] > needle {
-		mid = first + ((needle - array[first]) * (last - first)) / (array[last] - array[first]);
+	for array[left] < needle && array[right] > needle {
+		mid = left + ((needle - array[left]) * (right - left)) / (array[right] - array[left]);
 
 		if (array[mid] < needle) {
-			first = mid + 1;
+			left = mid + 1;
 		} else if (array[mid] > needle) {
-			last = mid - 1;
+			right = mid - 1;
 		} else {
 			return mid;
 		}
 	}
 
-	if (array[first] == needle) {
-		return first;
-	} else if (array[last] == needle) {
-		return last;
+	if (array[left] == needle) {
+		return left;
+	} else if (array[right] == needle) {
+		return right;
 	} else {
 		return -1; // Not found
 	}
