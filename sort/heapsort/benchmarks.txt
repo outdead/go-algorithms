@@ -1,0 +1,8 @@
+BenchmarkSortInts100-4              	  500000	      4540 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSortInts100000-4           	     100	  12250699 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSortIntsWithHeap100-4      	  200000	      7180 ns/op	     944 B/op	       2 allocs/op
+BenchmarkSortIntsWithHeap100000-4   	     100	  16350934 ns/op	  802864 B/op	       2 allocs/op
+BenchmarkSortInterface100-4         	  200000	     11715 ns/op	      32 B/op	       1 allocs/op
+BenchmarkSortInterface100000-4      	      50	  37542144 ns/op	      32 B/op	       1 allocs/op
+PASS
+ok  	github.com/Ganelon13/go-algorithms/sort/heapsort	30.072s
