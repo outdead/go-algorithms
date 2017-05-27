@@ -14,7 +14,7 @@ Implementation of basic algorithms and data structures with Go programming langu
 
 ### Data structures
 
-* [Binary Heap](/binaryheap) ([benchmarks](/structures/binaryheap/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Binary_heap))
+* [Binary Heap](/structures/binaryheap) ([benchmarks](/structures/binaryheap/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Binary_heap))
 
 ### Sort Algorithms
 
