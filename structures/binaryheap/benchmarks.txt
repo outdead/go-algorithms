@@ -1,0 +1,12 @@
+BenchmarkInit100-4         	 1000000	      1094 ns/op	     944 B/op	       2 allocs/op
+BenchmarkInit100000-4      	    1000	   1381079 ns/op	  802864 B/op	       2 allocs/op
+BenchmarkPush100-4         	  500000	      2512 ns/op	    4042 B/op	       0 allocs/op
+BenchmarkPush100000-4      	    1000	   2506143 ns/op	 4935060 B/op	       0 allocs/op
+BenchmarkPop100-4          	  300000	      5376 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPop100000-4       	     100	  12330707 ns/op	       0 B/op	       0 allocs/op
+BenchmarkExtract100-4      	 1000000	      1714 ns/op	       0 B/op	       0 allocs/op
+BenchmarkExtract100000-4   	    1000	   1194066 ns/op	       0 B/op	       0 allocs/op
+BenchmarkReplace100-4      	 1000000	      2346 ns/op	       0 B/op	       0 allocs/op
+BenchmarkReplace100000-4   	    1000	   1824105 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/Ganelon13/go-data-structures/binaryheap	91.810s

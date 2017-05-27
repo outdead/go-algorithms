@@ -12,7 +12,7 @@
 package heapsort
 
 import (
-	"github.com/Ganelon13/go-data-structures/binaryheap"
+	"github.com/Ganelon13/go-algorithms/structures/binaryheap"
 	"sort"
 )
 

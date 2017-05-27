@@ -12,7 +12,7 @@
 package heapsort
 
 import (
-	"github.com/Ganelon13/go-data-structures/utils/randomizer"
+	"github.com/Ganelon13/go-algorithms/utils/randomizer"
 	"sort"
 	"testing"
 )
@@ -40,7 +40,6 @@ func TestSortInterface(t *testing.T) {
 		t.Fatalf("Slice is not sorted %v", slice)
 	}
 }
-
 
 func benchmarkSortInts(b *testing.B, size int) {
 	b.StopTimer()
