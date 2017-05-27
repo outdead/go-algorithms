@@ -14,4 +14,4 @@ Implementation of basic algorithms with Go programming language. Tests and bench
 
 ### Content
 
-* [Heapsort](/sort/heapsort) ([benchmarks](/binaryheap/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Heapsort))
+* [Heapsort](/sort/heapsort) ([benchmarks](/sort/heapsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Heapsort))
