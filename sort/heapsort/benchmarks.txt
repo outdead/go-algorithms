@@ -1,8 +1,14 @@
-BenchmarkSortInts100-4              	  500000	      4540 ns/op	       0 B/op	       0 allocs/op
-BenchmarkSortInts100000-4           	     100	  12250699 ns/op	       0 B/op	       0 allocs/op
-BenchmarkSortIntsWithHeap100-4      	  200000	      7180 ns/op	     944 B/op	       2 allocs/op
-BenchmarkSortIntsWithHeap100000-4   	     100	  16350934 ns/op	  802864 B/op	       2 allocs/op
-BenchmarkSortInterface100-4         	  200000	     11715 ns/op	      32 B/op	       1 allocs/op
-BenchmarkSortInterface100000-4      	      50	  37542144 ns/op	      32 B/op	       1 allocs/op
+BenchmarkIntsWithHeap100-4      	  200000	      7670 ns/op	     944 B/op	       2 allocs/op
+BenchmarkIntsWithHeap1000-4     	   20000	     94755 ns/op	    8240 B/op	       2 allocs/op
+BenchmarkIntsWithHeap10000-4    	    1000	   1059062 ns/op	   81968 B/op	       2 allocs/op
+BenchmarkIntsWithHeap100000-4   	     100	  13490773 ns/op	  802864 B/op	       2 allocs/op
+BenchmarkInts100-4              	  300000	      5226 ns/op	       0 B/op	       0 allocs/op
+BenchmarkInts1000-4             	   20000	     67803 ns/op	       0 B/op	       0 allocs/op
+BenchmarkInts10000-4            	    2000	    806546 ns/op	       0 B/op	       0 allocs/op
+BenchmarkInts100000-4           	     100	  11680667 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSort100-4              	  200000	     12065 ns/op	      32 B/op	       1 allocs/op
+BenchmarkSort1000-4             	   10000	    202511 ns/op	      32 B/op	       1 allocs/op
+BenchmarkSort10000-4            	     500	   2580148 ns/op	      32 B/op	       1 allocs/op
+BenchmarkSort100000-4           	      50	  36482092 ns/op	      32 B/op	       1 allocs/op
 PASS
-ok  	github.com/Ganelon13/go-algorithms/sort/heapsort	30.072s
+ok  	github.com/Ganelon13/go-algorithms/sort/heapsort	47.883s

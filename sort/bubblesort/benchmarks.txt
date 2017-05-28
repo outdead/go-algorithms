@@ -1,0 +1,6 @@
+BenchmarkInts100-4      	  100000	      19131 ns/op	       0 B/op	       0 allocs/op
+BenchmarkInts1000-4     	    1000	    1742099 ns/op	       0 B/op	       0 allocs/op
+BenchmarkInts10000-4    	      10	  170909790 ns/op	       0 B/op	       0 allocs/op
+BenchmarkInts100000-4   	       1	22825305600 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/Ganelon13/go-algorithms/sort/bubblesort	33.118s
