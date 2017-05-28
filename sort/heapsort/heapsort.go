@@ -24,61 +24,61 @@ import (
 
 // IntsWithHeap sorts a slice of ints in increasing order.
 // Method Use the implemented binary heap
-func IntsWithHeap(a []int) {
-	h := binaryheap.Init(a, binaryheap.MIN)
+func IntsWithHeap(data []int) {
+	h := binaryheap.Init(data, binaryheap.MIN)
 	for i := 0; h.Len() > 0; i++ {
-		a[i], _ = h.Pop()
+		data[i], _ = h.Pop()
 	}
 }
 
 // Ints sorts a slice of ints in increasing order.
 // Method independently implements a binary heap.
-func Ints(a []int) {
-	for start := (len(a) - 2) / 2; start >= 0; start-- {
-		siftDownInts(a, start, len(a)-1)
+func Ints(data []int) {
+	for start := (len(data) - 2) / 2; start >= 0; start-- {
+		siftDownInts(data, start, len(data)-1)
 	}
-	for end := len(a) - 1; end > 0; end-- {
-		a[0], a[end] = a[end], a[0]
-		siftDownInts(a, 0, end-1)
+	for end := len(data) - 1; end > 0; end-- {
+		data[0], data[end] = data[end], data[0]
+		siftDownInts(data, 0, end-1)
 	}
 }
 
 // Sort sorting any type that implements sort.Interface.
 // Method independently implements a binary heap.
-func Sort(a sort.Interface) {
-	for start := (a.Len() - 2) / 2; start >= 0; start-- {
-		siftDownInterface(a, start, a.Len()-1)
+func Sort(data sort.Interface) {
+	for start := (data.Len() - 2) / 2; start >= 0; start-- {
+		siftDownInterface(data, start, data.Len()-1)
 	}
-	for end := a.Len() - 1; end > 0; end-- {
-		a.Swap(0, end)
-		siftDownInterface(a, 0, end-1)
+	for end := data.Len() - 1; end > 0; end-- {
+		data.Swap(0, end)
+		siftDownInterface(data, 0, end-1)
 	}
 }
 
-func siftDownInts(a []int, start, end int) {
+func siftDownInts(data []int, start, end int) {
 	for root := start; root*2+1 <= end; {
 		child := root*2 + 1
-		if child+1 <= end && (a[child] < a[child+1]) {
+		if child+1 <= end && (data[child] < data[child+1]) {
 			child++
 		}
-		if !(a[root] < a[child]) {
+		if !(data[root] < data[child]) {
 			return
 		}
-		a[root], a[child] = a[child], a[root]
+		data[root], data[child] = data[child], data[root]
 		root = child
 	}
 }
 
-func siftDownInterface(a sort.Interface, start, end int) {
+func siftDownInterface(data sort.Interface, start, end int) {
 	for root := start; root*2+1 <= end; {
 		child := root*2 + 1
-		if child+1 <= end && a.Less(child, child+1) {
+		if child+1 <= end && data.Less(child, child+1) {
 			child++
 		}
-		if !a.Less(root, child) {
+		if !data.Less(root, child) {
 			return
 		}
-		a.Swap(root, child)
+		data.Swap(root, child)
 		root = child
 	}
 }

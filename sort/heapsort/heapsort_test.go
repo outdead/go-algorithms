@@ -24,61 +24,56 @@ import (
 )
 
 func TestIntsWithHeap(t *testing.T) {
-	slice := randomizer.GenerateIntSlice(100, 999)
-	IntsWithHeap(slice)
-	if !sort.IsSorted(sort.IntSlice(slice)) {
-		t.Fatalf("Slice is not sorted %v", slice)
+	data := randomizer.GenerateIntSlice(100, 999)
+	IntsWithHeap(data)
+	if !sort.IsSorted(sort.IntSlice(data)) {
+		t.Fatalf("Data is not sorted %v", data)
 	}
 }
 
 func TestInts(t *testing.T) {
-	slice := randomizer.GenerateIntSlice(100, 999)
-	Ints(slice)
-	if !sort.IsSorted(sort.IntSlice(slice)) {
-		t.Fatalf("Slice is not sorted %v", slice)
+	data := randomizer.GenerateIntSlice(100, 999)
+	Ints(data)
+	if !sort.IsSorted(sort.IntSlice(data)) {
+		t.Fatalf("Data is not sorted %v", data)
 	}
 }
 
 func TestSort(t *testing.T) {
-	slice := randomizer.GenerateIntSlice(100, 999)
-	Sort(sort.IntSlice(slice))
-	if !sort.IsSorted(sort.IntSlice(slice)) {
-		t.Fatalf("Slice is not sorted %v", slice)
+	data := randomizer.GenerateIntSlice(100, 999)
+	Sort(sort.IntSlice(data))
+	if !sort.IsSorted(sort.IntSlice(data)) {
+		t.Fatalf("Data is not sorted %v", data)
 	}
 }
 
 func benchmarkIntsWithHeap(b *testing.B, size int) {
 	for i := 1; i <= b.N; i++ {
 		b.StopTimer()
-		slice := randomizer.GenerateIntSlice(size, 999)
+		data := randomizer.GenerateIntSlice(size, 999)
 		b.StartTimer()
 
-		IntsWithHeap(slice)
+		IntsWithHeap(data)
 	}
 }
 
 func benchmarkInts(b *testing.B, size int) {
 	for i := 1; i <= b.N; i++ {
 		b.StopTimer()
-		slice := randomizer.GenerateIntSlice(size, 999)
+		data := randomizer.GenerateIntSlice(size, 999)
 		b.StartTimer()
 
-		Ints(slice)
+		Ints(data)
 	}
 }
 
 func benchmarkSort(b *testing.B, size int) {
-	b.StopTimer()
-	initial := randomizer.GenerateIntSlice(size, 999)
-	slice := make(sort.IntSlice, len(initial))
-	b.StartTimer()
-
 	for i := 1; i <= b.N; i++ {
 		b.StopTimer()
-		copy(slice, sort.IntSlice(initial))
+		data := randomizer.GenerateIntSlice(size, 999)
 		b.StartTimer()
 
-		Sort(sort.IntSlice(slice))
+		Sort(sort.IntSlice(data))
 	}
 }
 
