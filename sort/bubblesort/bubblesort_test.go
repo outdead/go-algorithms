@@ -19,20 +19,20 @@ import (
 )
 
 func TestInts(t *testing.T) {
-	slice := randomizer.GenerateIntSlice(100, 999)
-	Ints(slice)
-	if !sort.IsSorted(sort.IntSlice(slice)) {
-		t.Fatalf("Slice is not sorted %v", slice)
+	data := randomizer.GenerateIntSlice(100, 999)
+	Ints(data)
+	if !sort.IsSorted(sort.IntSlice(data)) {
+		t.Fatalf("Data is not sorted %v", data)
 	}
 }
 
 func benchmarkInts(b *testing.B, size int) {
 	for i := 1; i <= b.N; i++ {
 		b.StopTimer()
-		slice := randomizer.GenerateIntSlice(size, 999)
+		data := randomizer.GenerateIntSlice(size, 999)
 		b.StartTimer()
 
-		Ints(slice)
+		Ints(data)
 	}
 }
 

@@ -1,0 +1,6 @@
+BenchmarkInts100-4      	  300000	      3510 ns/op	       0 B/op	       0 allocs/op
+BenchmarkInts1000-4     	   30000	     57169 ns/op	       0 B/op	       0 allocs/op
+BenchmarkInts10000-4    	    2000	    759542 ns/op	       0 B/op	       0 allocs/op
+BenchmarkInts100000-4   	     100	  10970629 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/Ganelon13/go-algorithms/sort/shellsort	18.603s

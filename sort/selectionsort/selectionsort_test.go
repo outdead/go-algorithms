@@ -1,13 +1,12 @@
 //
-// Package insertionsort provides sort operation for []int type
+// Package selectionsort provides sort operation for []int type
 //
-// Data structure	           Array
-// Best-case performance       O(n) comparisons, O(1) swaps
-// Average performance	       О(n^2) comparisons, swaps
-// Worst-case performance      О(n^2) comparisons, swaps
+// Best-case performance       О(n^2)
+// Average performance         О(n^2)
+// Worst-case performance	   О(n^2)
 // Worst-case space complexity O(1) auxiliary
 //
-package insertionsort
+package selectionsort
 
 import (
 	"github.com/Ganelon13/go-algorithms/utils/randomizer"

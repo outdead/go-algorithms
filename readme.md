@@ -20,4 +20,6 @@ Implementation of basic algorithms and data structures with Go programming langu
 
 * [Bubble sort](/sort/bubblesort) ([benchmarks](/sort/bubblesort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Bubble_sort))
 * [Insertion sort](/sort/insertionsort) ([benchmarks](/sort/insertionsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Insertion_sort))
+* [Shellsort](/sort/shellsort) ([benchmarks](/sort/shellsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Shellsort))
+* [Selection sort](/sort/selectionsort) ([benchmarks](/sort/selectionsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Selection_sort))
 * [Heapsort](/sort/heapsort) ([benchmarks](/sort/heapsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Heapsort))

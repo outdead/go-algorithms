@@ -13,13 +13,13 @@
 package bubblesort
 
 // Ints sorts a slice of ints in increasing order.
-func Ints(a []int) {
+func Ints(data []int) {
 	var sorted bool
 	for !sorted {
 		sorted = true
-		for i := 0; i < len(a)-1; i++ {
-			if a[i] > a[i+1] {
-				a[i], a[i+1] = a[i+1], a[i]
+		for i := 0; i < len(data)-1; i++ {
+			if data[i] > data[i+1] {
+				data[i], data[i+1] = data[i+1], data[i]
 				sorted = false
 			}
 		}
