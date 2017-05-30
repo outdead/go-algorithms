@@ -1,6 +1,7 @@
 //
 // Package selectionsort provides sort operation for []int type
 //
+// Data structure              Array
 // Best-case performance       О(n^2)
 // Average performance         О(n^2)
 // Worst-case performance	   О(n^2)

@@ -1,3 +1,14 @@
+//
+// Package shellsort provides sort operation for []int type
+//
+// Use Sedgewick variant (Insertion)
+//
+// Data structure              Array
+// Best-case performance       O(n)
+// Average performance         0(n^(7/6))
+// Worst-case performance      O(n^(4/3))
+// Worst-case space complexity O(1) auxiliary
+//
 package shellsort
 
 import (

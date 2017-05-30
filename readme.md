@@ -22,4 +22,5 @@ Implementation of basic algorithms and data structures with Go programming langu
 * [Insertion sort](/sort/insertionsort) ([benchmarks](/sort/insertionsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Insertion_sort))
 * [Shellsort](/sort/shellsort) ([benchmarks](/sort/shellsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Shellsort))
 * [Selection sort](/sort/selectionsort) ([benchmarks](/sort/selectionsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Selection_sort))
+* [Merge sort](/sort/mergesort) ([benchmarks](/sort/mergesort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Merge_sort))
 * [Heapsort](/sort/heapsort) ([benchmarks](/sort/heapsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Heapsort))
