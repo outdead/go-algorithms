@@ -3,15 +3,6 @@ Algorithms in golang
 
 Implementation of basic algorithms and data structures with Go programming language. Tests and benchmarks are included
 
-## Materials used
-
-    https://youtu.be/eqWzZGNO_XM?list=PLrCZzMib1e9pDxHYzmEzMmnMMUK-dz0_7
-    https://rosettacode.org/wiki/Sorting_algorithms
-
-## Run benchmarks
-    go test -run=- -bench=. -benchmem
-    go test -run=- -bench=. -benchmem > benchmarks.txt
-
 ### Data structures
 
 * [Binary Heap](/structures/binaryheap) ([benchmarks](/structures/binaryheap/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Binary_heap))
@@ -23,4 +14,39 @@ Implementation of basic algorithms and data structures with Go programming langu
 * [Shellsort](/sort/shellsort) ([benchmarks](/sort/shellsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Shellsort))
 * [Selection sort](/sort/selectionsort) ([benchmarks](/sort/selectionsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Selection_sort))
 * [Merge sort](/sort/mergesort) ([benchmarks](/sort/mergesort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Merge_sort))
+* [Counting sort](/sort/countingsort) ([benchmarks](/sort/countingsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Counting_sort)
 * [Heapsort](/sort/heapsort) ([benchmarks](/sort/heapsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Heapsort))
+
+## Run benchmarks
+
+To start benchmarks is needed to use the standard utility `go test`. It allows to execute the following commands:
+
+    go test -run=- -bench=. -benchmem
+    go test -run=- -bench=. -benchmem > benchmarks.txt
+
+Script `bench.sh` allows to run tests without visiting the directory with the package:
+
+    ./bench.sh $1 $2
+
+where `$1` is the name of the package, for example `sort/bubblesort`, And `$2` an optional value - if it's not
+specified, the result is written to file `benchmarks.txt`. If parameter is set, result of execution is output
+to the console. For example:
+
+    ./bench.sh sort/heapsort false
+    ./bench.sh sort/heapsort
+
+is equivalent to the following commands:
+
+    go test github.com/Ganelon13/go-algorithms/sort/heapsort -run=- -bench=. -benchmem
+    go test github.com/Ganelon13/go-algorithms/sort/heapsort -run=- -bench=. -benchmem > sort/heapsort/benchmarks.txt
+
+Under the control of the Windows operating system script `bench.sh` can be executed provided that the system has a
+unix terminal emulator installed, for example [cygwin](https://www.cygwin.com/). Then the following command format is
+available from cmd:
+
+    ./bench.sh sort/bubblesort false | bash
+
+## Materials used
+
+    https://youtu.be/eqWzZGNO_XM?list=PLrCZzMib1e9pDxHYzmEzMmnMMUK-dz0_7
+    https://rosettacode.org/wiki/Sorting_algorithms

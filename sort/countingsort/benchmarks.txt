@@ -1,0 +1,6 @@
+BenchmarkInts100-4      	  300000	      5136 ns/op	    8192 B/op	       1 allocs/op
+BenchmarkInts1000-4     	  200000	     10945 ns/op	    8192 B/op	       1 allocs/op
+BenchmarkInts10000-4    	   50000	     31861 ns/op	    8192 B/op	       1 allocs/op
+BenchmarkInts100000-4   	    5000	    228012 ns/op	    8192 B/op	       1 allocs/op
+PASS
+ok  	github.com/Ganelon13/go-algorithms/sort/countingsort	103.639s

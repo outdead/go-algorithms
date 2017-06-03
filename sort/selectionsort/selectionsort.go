@@ -12,12 +12,10 @@ package selectionsort
 // Ints sorts a slice of ints in increasing order.
 func Ints(data []int) {
 	for i := 0; i < len(data)-1; i++ {
-		minKey := i
-		minValue := data[i]
+		minKey, minValue := i, data[i]
 		for j := i + 1; j < len(data); j++ {
 			if data[j] < minValue {
-				minKey = j
-				minValue = data[j]
+				minKey, minValue = j, data[j]
 			}
 		}
 		data[i], data[minKey] = minValue, data[i]
