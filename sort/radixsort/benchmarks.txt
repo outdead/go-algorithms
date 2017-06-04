@@ -1,0 +1,6 @@
+BenchmarkInts100-4      	  300000	      3786 ns/op	     896 B/op	       1 allocs/op
+BenchmarkInts1000-4     	  100000	     18801 ns/op	    8192 B/op	       1 allocs/op
+BenchmarkInts10000-4    	   10000	    173309 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkInts100000-4   	    1000	   2033116 ns/op	  802819 B/op	       1 allocs/op
+PASS
+ok  	github.com/Ganelon13/go-algorithms/sort/radixsort	52.084s

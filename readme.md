@@ -15,6 +15,7 @@ Implementation of basic algorithms and data structures with Go programming langu
 * [Selection sort](/sort/selectionsort) ([benchmarks](/sort/selectionsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Selection_sort))
 * [Merge sort](/sort/mergesort) ([benchmarks](/sort/mergesort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Merge_sort))
 * [Counting sort](/sort/countingsort) ([benchmarks](/sort/countingsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Counting_sort)
+* [Radix sort](/sort/radixsort) ([benchmarks](/sort/countingsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Radix_sort)
 * [Heapsort](/sort/heapsort) ([benchmarks](/sort/heapsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Heapsort))
 
 ## Run benchmarks
@@ -44,7 +45,7 @@ Under the control of the Windows operating system script `bench.sh` can be execu
 unix terminal emulator installed, for example [cygwin](https://www.cygwin.com/). Then the following command format is
 available from cmd:
 
-    ./bench.sh sort/bubblesort false | bash
+    echo ./bench.sh sort/bubblesort false | bash
 
 ## Materials used
 

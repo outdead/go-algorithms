@@ -16,3 +16,18 @@ func TestGenerateIntSlice(t *testing.T) {
 		}
 	}
 }
+
+func TestGenerateInt32Slice(t *testing.T) {
+	count, n := 10, int32(100)
+	slice := GenerateInt32Slice(count, n)
+
+	if len(slice) != count {
+		t.Errorf("len(slice) = %d; expected %d", len(slice), count)
+	}
+
+	for i, v := range slice {
+		if v > n {
+			t.Errorf("item %d invariant invalidated %d > %d", i, v, n)
+		}
+	}
+}
