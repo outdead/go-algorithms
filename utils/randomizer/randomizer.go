@@ -2,16 +2,23 @@ package randomizer
 
 import "math/rand"
 
-func GenerateIntSlice(count, n int) (slice []int) {
-	for i := 0; i < count; i++ {
-		slice = append(slice, rand.Intn(n))
+func GenerateIntSlice(length int, maxValue int) (slice []int) {
+	for i := 0; i < length; i++ {
+		slice = append(slice, rand.Intn(maxValue))
 	}
 	return
 }
 
-func GenerateInt32Slice(count int, n int32) (slice []int32) {
-	for i := 0; i < count; i++ {
-		slice = append(slice, rand.Int31n(n))
+func GenerateSortedIntSlice(length int) (slice []int) {
+	for i := 0; i < length; i++ {
+		slice = append(slice, i)
+	}
+	return
+}
+
+func GenerateInt32Slice(length int, maxValue int32) (slice []int32) {
+	for i := 0; i < length; i++ {
+		slice = append(slice, rand.Int31n(maxValue))
 	}
 	return
 }

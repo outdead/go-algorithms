@@ -1,0 +1,11 @@
+BenchmarkInts_sortPackage100-4      	  200000	      9360 ns/op	      32 B/op	       1 allocs/op
+BenchmarkInts_sortPackage1000-4     	   10000	    132307 ns/op	      32 B/op	       1 allocs/op
+BenchmarkInts_sortPackage10000-4    	    1000	   1344076 ns/op	      32 B/op	       1 allocs/op
+BenchmarkInts_sortPackage100000-4   	     100	  14440822 ns/op	      32 B/op	       1 allocs/op
+BenchmarkInts100-4      	              200000	      5120 ns/op	       0 B/op	       0 allocs/op
+BenchmarkInts1000-4     	               30000	     62570 ns/op	       0 B/op	       0 allocs/op
+BenchmarkInts10000-4    	                3000	    611034 ns/op	       0 B/op	       0 allocs/op
+BenchmarkInts100000-4   	                 300	   5713659 ns/op	       0 B/op	       0 allocs/op
+
+PASS
+ok  	github.com/Ganelon13/go-algorithms/sort/quicksort	66.625s

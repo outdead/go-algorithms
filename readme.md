@@ -14,8 +14,9 @@ Implementation of basic algorithms and data structures with Go programming langu
 * [Shellsort](/sort/shellsort) ([benchmarks](/sort/shellsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Shellsort))
 * [Selection sort](/sort/selectionsort) ([benchmarks](/sort/selectionsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Selection_sort))
 * [Merge sort](/sort/mergesort) ([benchmarks](/sort/mergesort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Merge_sort))
-* [Counting sort](/sort/countingsort) ([benchmarks](/sort/countingsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Counting_sort)
-* [Radix sort](/sort/radixsort) ([benchmarks](/sort/radixsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Radix_sort)
+* [Quicksort](/sort/quicksort) ([benchmarks](/sort/quicksort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Quicksort))
+* [Counting sort](/sort/countingsort) ([benchmarks](/sort/countingsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Counting_sort))
+* [Radix sort](/sort/radixsort) ([benchmarks](/sort/radixsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Radix_sort))
 * [Heapsort](/sort/heapsort) ([benchmarks](/sort/heapsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Heapsort))
 
 ## Run benchmarks
