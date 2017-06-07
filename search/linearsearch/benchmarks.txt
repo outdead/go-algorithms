@@ -1,0 +1,14 @@
+BenchmarkIntsFirst100-4       	99999999	         1.94 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsFirst1000-4      	99999999	         2.53 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsFirst10000-4     	99999999	         2.60 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsFirst100000-4    	99999999	         3.16 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsMiddle100-4      	50000000	         33.1 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsMiddle1000-4     	10000000	          192 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsMiddle10000-4    	 1000000	         2054 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsMiddle100000-4   	  100000	        21571 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsLast100-4        	30000000	         56.6 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsLast1000-4       	 3000000	          419 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsLast10000-4      	  300000	         5343 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsLast100000-4     	   20000	        60703 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/Ganelon13/go-algorithms/search/linearsearch	18.157s

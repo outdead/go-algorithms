@@ -1,31 +1,46 @@
 package randomizer
 
-import "testing"
+import (
+	"sort"
+	"testing"
+)
 
 func TestGenerateIntSlice(t *testing.T) {
 	length, maxValue := 10, 100
-	slice := GenerateIntSlice(length, maxValue)
+	data := GenerateIntSlice(length, maxValue)
 
-	if len(slice) != length {
-		t.Errorf("len(slice) = %d; expected %d", len(slice), length)
+	if len(data) != length {
+		t.Errorf("len(data) = %d; expected %d", len(data), length)
 	}
 
-	for i, v := range slice {
+	for i, v := range data {
 		if v > maxValue {
 			t.Errorf("item %d invariant invalidated %d > %d", i, v, maxValue)
 		}
 	}
 }
 
-func TestGenerateInt32Slice(t *testing.T) {
-	length, maxValue := 10, int32(100)
-	slice := GenerateInt32Slice(length, maxValue)
-
-	if len(slice) != length {
-		t.Errorf("len(slice) = %d; expected %d", len(slice), length)
+func TestGenerateSortedIntSlice(t *testing.T) {
+	length := 1000
+	data := GenerateSortedIntSlice(length)
+	if len(data) != length {
+		t.Errorf("len(data) = %d; expected %d", len(data), length)
 	}
 
-	for i, v := range slice {
+	if !sort.IntsAreSorted(data) {
+		t.Error("Data in not sorted")
+	}
+}
+
+func TestGenerateInt32Slice(t *testing.T) {
+	length, maxValue := 10, int32(100)
+	data := GenerateInt32Slice(length, maxValue)
+
+	if len(data) != length {
+		t.Errorf("len(data) = %d; expected %d", len(data), length)
+	}
+
+	for i, v := range data {
 		if v > maxValue {
 			t.Errorf("item %d invariant invalidated %d > %d", i, v, maxValue)
 		}

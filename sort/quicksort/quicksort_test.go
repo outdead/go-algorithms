@@ -8,7 +8,7 @@
 // Data structure              Array
 // Best-case performance       О(n log n)
 // Average performance         О(n log n)
-// Worst-case performance	   О(n^2)
+// Worst-case performance      О(n^2)
 // Worst-case space complexity O(1) auxiliary
 //
 package quicksort

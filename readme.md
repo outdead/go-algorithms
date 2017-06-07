@@ -19,6 +19,10 @@ Implementation of basic algorithms and data structures with Go programming langu
 * [Radix sort](/sort/radixsort) ([benchmarks](/sort/radixsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Radix_sort))
 * [Heapsort](/sort/heapsort) ([benchmarks](/sort/heapsort/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Heapsort))
 
+### Search algorithms
+
+* [Linear search](/search/linearsearch) ([benchmarks](/search/linearsearch/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Linear_search))
+
 ## Run benchmarks
 
 To start benchmarks is needed to use the standard utility `go test`. It allows to execute the following commands:
