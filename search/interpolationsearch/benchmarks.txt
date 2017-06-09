@@ -1,0 +1,14 @@
+BenchmarkIntsFirst100-4       	300000000	         4.02 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsFirst1000-4      	500000000	         3.69 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsFirst10000-4     	500000000	         3.70 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsFirst100000-4    	300000000	         3.51 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsMiddle100-4      	100000000	         14.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsMiddle1000-4     	100000000	         10.9 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsMiddle10000-4    	100000000	         18.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsMiddle100000-4   	100000000	         17.7 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsLast100-4        	300000000	         5.12 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsLast1000-4       	300000000	         4.37 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsLast10000-4      	300000000	         4.46 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIntsLast100000-4     	300000000	         4.33 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/Ganelon13/go-algorithms/search/interpolationsearch	21.298s
