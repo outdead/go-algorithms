@@ -3,7 +3,7 @@
 //
 // Data structure              Array
 // Best-case performance       O(1)
-// Average performance         O(log log n).
+// Average performance         O(log log n)
 // Worst-case performance      O(n)
 // Worst-case space complexity O(1) iterative
 //
@@ -18,12 +18,16 @@ func TestInts(t *testing.T) {
 	data := randomizer.GenerateSortedIntSlice(1000)
 
 	wantIndex := 137
-	searchValue := data[wantIndex]
+	wantValue := data[wantIndex]
 
-	searchIndex := Ints(data, searchValue)
+	searchIndex := Ints(data, wantValue)
 
-	if searchIndex != wantIndex {
-		t.Errorf("searchIndex is %d, want %d", searchIndex, wantIndex)
+	if searchIndex < 0 || searchIndex > len(data) {
+		t.Fatalf("searchIndex is %d, want %d", searchIndex, wantIndex)
+	}
+
+	if data[searchIndex] != data[wantIndex] {
+		t.Fatalf("searchIndex is %d, want %d", searchIndex, wantIndex)
 	}
 }
 
@@ -31,9 +35,22 @@ func TestInts2(t *testing.T) {
 	data := randomizer.GenerateSortedIntSlice(1000)
 
 	wantIndex := -1
-	searchValue := data[999] + 1
+	wantValue := data[999] + 1
 
-	searchIndex := Ints(data, searchValue)
+	searchIndex := Ints(data, wantValue)
+
+	if searchIndex != wantIndex {
+		t.Errorf("searchIndex is %d, want %d", searchIndex, wantIndex)
+	}
+}
+
+func TestInts3(t *testing.T) {
+	data := []int{1, 2}
+
+	wantIndex := 1
+	wantValue := 2
+
+	searchIndex := Ints(data, wantValue)
 
 	if searchIndex != wantIndex {
 		t.Errorf("searchIndex is %d, want %d", searchIndex, wantIndex)

@@ -3,7 +3,7 @@
 //
 // Data structure              Array
 // Best-case performance       O(1)
-// Average performance         O(log log n).
+// Average performance         O(log log n)
 // Worst-case performance      O(n)
 // Worst-case space complexity O(1) iterative
 //
@@ -19,7 +19,7 @@ func Ints(data []int, needle int) int {
 	mid := 0
 
 	if right == 0 || needle < data[0] || needle > data[right] {
-		return -1
+		return -1 // Out of range
 	}
 
 	for data[left] < needle && data[right] > needle {
@@ -38,7 +38,7 @@ func Ints(data []int, needle int) int {
 		return left
 	} else if data[right] == needle {
 		return right
-	} else {
-		return -1 // Not found
 	}
+
+	return -1 // Not found
 }

@@ -23,6 +23,7 @@ Implementation of basic algorithms and data structures with Go programming langu
 
 * [Linear search](/search/linearsearch) ([benchmarks](/search/linearsearch/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Linear_search))
 * [Interpolation search](/search/interpolationsearch) ([benchmarks](/search/interpolationsearch/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Interpolation_search))
+* [Binary search](/search/binarysearch) ([benchmarks](/search/binarysearch/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Binary_search_algorithm))
 
 ## Run benchmarks
 
