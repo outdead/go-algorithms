@@ -1,0 +1,15 @@
+BenchmarkFillSequence10-4               	 5000000	       260.0 ns/op	     192 B/op	       2 allocs/op
+BenchmarkFillSequence25-4               	 3000000	       535.0 ns/op	     416 B/op	       2 allocs/op
+BenchmarkFillSequence50-4               	 1000000	      1007.0 ns/op	     832 B/op	       2 allocs/op
+
+BenchmarkFillSequence_GetRand50-4       	30000000	        54.6 ns/op	       0 B/op	       0 allocs/op
+
+BenchmarkGetNumber10-4                  	20000000	       143.0 ns/op	      48 B/op	       3 allocs/op
+BenchmarkGetNumber25-4                  	10000000	       192.0 ns/op	      48 B/op	       3 allocs/op
+BenchmarkGetNumber50-4                  	 5000000	       289.0 ns/op	      48 B/op	       3 allocs/op
+
+BenchmarkComputeApproximateNumber10-4   	20000000	        79.9 ns/op	       0 B/op	       0 allocs/op
+BenchmarkComputeApproximateNumber25-4   	20000000	        78.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkComputeApproximateNumber50-4   	20000000	        86.0 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/Ganelon13/go-algorithms/math/fibonacci	18.478s

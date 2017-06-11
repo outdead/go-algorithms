@@ -25,6 +25,10 @@ Implementation of basic algorithms and data structures with Go programming langu
 * [Interpolation search](/search/interpolationsearch) ([benchmarks](/search/interpolationsearch/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Interpolation_search))
 * [Binary search](/search/binarysearch) ([benchmarks](/search/binarysearch/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Binary_search_algorithm))
 
+### Math
+
+* [Fibonacci number](/math/fibonacci) ([benchmarks](/math/fibonacci/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Fibonacci_number))
+
 ## Run benchmarks
 
 To start benchmarks is needed to use the standard utility `go test`. It allows to execute the following commands:
