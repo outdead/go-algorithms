@@ -8,9 +8,11 @@ import (
 	"path"
 	"reflect"
 	"runtime"
+	"strings"
 )
 
 // GetFuncName returns the name of the function.
+// TODO: Fix panic if i not func
 func GetFuncName(i interface{}) string {
-	return path.Ext(runtime.FuncForPC(reflect.ValueOf(i).Pointer()).Name())
+	return strings.Trim(path.Ext(runtime.FuncForPC(reflect.ValueOf(i).Pointer()).Name()), ".")
 }
