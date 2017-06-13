@@ -1,0 +1,19 @@
+BenchmarkIsPrime2147483646-4                              	200000000	         8.67 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsPrime2147483647-4                              	   10000	    310417 ns/op	       0 B/op	       0 allocs/op
+
+BenchmarkGetSequenceWithTrialDivision1000000-4            	       3	 365687600 ns/op	 3687674 B/op	      29 allocs/op
+BenchmarkGetSequenceWithTrialDivision10000000-4           	       1	10703612200 ns/op	28820736 B/op	      38 allocs/op
+BenchmarkGetSequenceWithTrialDivision100000000-4          	       0	         0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkGetSequenceWithTrialDivision1000000000-4         	       0	         0 ns/op	       0 B/op	       0 allocs/op
+
+BenchmarkGetSequenceWithSieveOfEratosthenes1000000-4      	     200	   6155352 ns/op	 4695304 B/op	      30 allocs/op
+BenchmarkGetSequenceWithSieveOfEratosthenes10000000-4     	      10	 150708620 ns/op	38823168 B/op	      39 allocs/op
+BenchmarkGetSequenceWithSieveOfEratosthenes100000000-4    	       1	2276130100 ns/op	370910464 B/op	      49 allocs/op
+BenchmarkGetSequenceWithSieveOfEratosthenes1000000000-4   	       1	21052204100 ns/op	3526501632 B/op	      59 allocs/op
+
+BenchmarkGetSequenceWithSieveOfAtkin1000000-4             	     100	  10000572 ns/op	 4695295 B/op	      30 allocs/op
+BenchmarkGetSequenceWithSieveOfAtkin10000000-4            	       5	 224012820 ns/op	38823168 B/op	      39 allocs/op
+BenchmarkGetSequenceWithSieveOfAtkin100000000-4           	       1	2652151700 ns/op	370910464 B/op	      49 allocs/op
+BenchmarkGetSequenceWithSieveOfAtkin1000000000-4          	       1	36254073600 ns/op	3526501632 B/op	      59 allocs/op
+PASS
+ok  	github.com/Ganelon13/go-algorithms/math/primenumber	88.245s

@@ -28,6 +28,10 @@ Implementation of basic algorithms and data structures with Go programming langu
 ### Math
 
 * [Fibonacci number](/math/fibonacci) ([benchmarks](/math/fibonacci/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Fibonacci_number))
+* [Prime number](/math/primenumber) ([benchmarks](/math/primenumber/benchmarks.txt)) ([wiki](https://en.wikipedia.org/wiki/Prime_number))
+    * Trial division ([wiki](https://en.wikipedia.org/wiki/Trial_division))
+    * Sieve of Eratosthenes ([wiki](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes))
+    * Sieve of Atkin ([wiki](https://en.wikipedia.org/wiki/Sieve_of_Atkin))
 
 ## Run benchmarks
 
