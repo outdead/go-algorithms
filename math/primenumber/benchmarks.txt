@@ -16,4 +16,4 @@ BenchmarkGetSequenceWithSieveOfAtkin10000000-4            	       5	 224012820 n
 BenchmarkGetSequenceWithSieveOfAtkin100000000-4           	       1	2652151700 ns/op	370910464 B/op	      49 allocs/op
 BenchmarkGetSequenceWithSieveOfAtkin1000000000-4          	       1	36254073600 ns/op	3526501632 B/op	      59 allocs/op
 PASS
-ok  	github.com/Ganelon13/go-algorithms/math/primenumber	88.245s
+ok  	github.com/ganelon13/go-algorithms/math/primenumber	88.245s

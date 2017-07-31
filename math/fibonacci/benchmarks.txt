@@ -12,4 +12,4 @@ BenchmarkComputeApproximateNumber10-4   	20000000	        79.9 ns/op	       0 B/
 BenchmarkComputeApproximateNumber25-4   	20000000	        78.0 ns/op	       0 B/op	       0 allocs/op
 BenchmarkComputeApproximateNumber50-4   	20000000	        86.0 ns/op	       0 B/op	       0 allocs/op
 PASS
-ok  	github.com/Ganelon13/go-algorithms/math/fibonacci	18.478s
+ok  	github.com/ganelon13/go-algorithms/math/fibonacci	18.478s

@@ -11,4 +11,4 @@ BenchmarkSort1000-4             	   10000	    202511 ns/op	      32 B/op	       
 BenchmarkSort10000-4            	     500	   2580148 ns/op	      32 B/op	       1 allocs/op
 BenchmarkSort100000-4           	      50	  36482092 ns/op	      32 B/op	       1 allocs/op
 PASS
-ok  	github.com/Ganelon13/go-algorithms/sort/heapsort	47.883s
+ok  	github.com/ganelon13/go-algorithms/sort/heapsort	47.883s

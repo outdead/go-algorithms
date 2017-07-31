@@ -8,7 +8,7 @@
 package binaryheap
 
 import (
-	"github.com/Ganelon13/go-algorithms/utils/randomizer"
+	"github.com/ganelon13/go-algorithms/utils/randomizer"
 	"math/rand"
 	"sort"
 	"testing"

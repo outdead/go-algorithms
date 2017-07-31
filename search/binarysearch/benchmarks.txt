@@ -37,4 +37,4 @@ BenchmarkSearchInts_sortPackageLast1000-4       	30000000	        46.4 ns/op	   
 BenchmarkSearchInts_sortPackageLast10000-4      	20000000	        61.8 ns/op	       0 B/op	       0 allocs/op
 BenchmarkSearchInts_sortPackageLast100000-4     	20000000	        99.9 ns/op	       0 B/op	       0 allocs/op
 PASS
-ok  	github.com/Ganelon13/go-algorithms/search/binarysearch	63.780s
+ok  	github.com/ganelon13/go-algorithms/search/binarysearch	63.780s

@@ -4,7 +4,7 @@
 package primenumber
 
 import (
-	"github.com/Ganelon13/go-algorithms/utils/reflects"
+	"github.com/ganelon13/go-algorithms/utils/reflects"
 	"testing"
 )
 

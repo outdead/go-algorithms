@@ -11,4 +11,4 @@ BenchmarkIntsLast1000-4       	300000000	         4.37 ns/op	       0 B/op	     
 BenchmarkIntsLast10000-4      	300000000	         4.46 ns/op	       0 B/op	       0 allocs/op
 BenchmarkIntsLast100000-4     	300000000	         4.33 ns/op	       0 B/op	       0 allocs/op
 PASS
-ok  	github.com/Ganelon13/go-algorithms/search/interpolationsearch	21.298s
+ok  	github.com/ganelon13/go-algorithms/search/interpolationsearch	21.298s

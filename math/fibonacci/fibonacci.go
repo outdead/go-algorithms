@@ -4,7 +4,7 @@
 package fibonacci
 
 import (
-	"github.com/Ganelon13/go-algorithms/utils/maths"
+	"github.com/ganelon13/go-algorithms/utils/maths"
 	"math"
 )
 

@@ -53,8 +53,8 @@ to the console. For example:
 
 is equivalent to the following commands:
 
-    go test github.com/Ganelon13/go-algorithms/sort/heapsort -run=- -bench=. -benchmem
-    go test github.com/Ganelon13/go-algorithms/sort/heapsort -run=- -bench=. -benchmem > sort/heapsort/benchmarks.txt
+    go test github.com/ganelon13/go-algorithms/sort/heapsort -run=- -bench=. -benchmem
+    go test github.com/ganelon13/go-algorithms/sort/heapsort -run=- -bench=. -benchmem > sort/heapsort/benchmarks.txt
 
 Under the control of the Windows operating system script `bench.sh` can be executed provided that the system has a
 unix terminal emulator installed, for example [cygwin](https://www.cygwin.com/). Then the following command format is

@@ -3,4 +3,4 @@ BenchmarkInts1000-4     	    3000	    517362 ns/op	       0 B/op	       0 allocs
 BenchmarkInts10000-4    	      30	  40002280 ns/op	       0 B/op	       0 allocs/op
 BenchmarkInts100000-4   	       1	3997228600 ns/op	       0 B/op	       0 allocs/op
 PASS
-ok  	github.com/Ganelon13/go-algorithms/sort/insertionsort	16.488s
+ok  	github.com/ganelon13/go-algorithms/sort/insertionsort	16.488s

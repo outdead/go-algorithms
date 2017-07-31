@@ -9,4 +9,4 @@ BenchmarkExtract100000-4   	    1000	   1194066 ns/op	       0 B/op	       0 all
 BenchmarkReplace100-4      	 1000000	      2346 ns/op	       0 B/op	       0 allocs/op
 BenchmarkReplace100000-4   	    1000	   1824105 ns/op	       0 B/op	       0 allocs/op
 PASS
-ok  	github.com/Ganelon13/go-data-structures/binaryheap	91.810s
+ok  	github.com/ganelon13/go-data-structures/binaryheap	91.810s

@@ -3,4 +3,4 @@ BenchmarkInts1000-4     	    3000	    686705 ns/op	       0 B/op	       0 allocs
 BenchmarkInts10000-4    	      20	  50452890 ns/op	       0 B/op	       0 allocs/op
 BenchmarkInts100000-4   	       1	5608320700 ns/op	       0 B/op	       0 allocs/op
 PASS
-ok  	github.com/Ganelon13/go-algorithms/sort/selectionsort	13.981s
+ok  	github.com/ganelon13/go-algorithms/sort/selectionsort	13.981s
